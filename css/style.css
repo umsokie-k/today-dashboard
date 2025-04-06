@@ -1,0 +1,83 @@
+.hidden {
+    display: none;
+} 
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: white;
+    font-family: 'NanumGothicLight';
+}
+
+img{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -1;
+    opacity: 0.9;
+    filter: brightness(60%);
+}
+
+#weather {
+    position: absolute;
+    top: 40px;
+}
+
+#date {
+    position: absolute;
+    top: 300px;
+}
+
+#clock {      
+    font-size: 75px;
+    text-align: center;
+    font-family: initial;
+}
+
+#greeting {
+    position: absolute;
+    top: 230px;
+    font-size: 30px;
+}
+
+#greeting .user {
+    color: #00DFA2;
+    font-weight: bold;
+  }
+  
+  #greeting .text {
+    color: #FF0060;
+  }
+  
+  #greeting .emphasis {
+    color: #F6FA70;
+    font-weight: bold;
+    animation: blink 1s infinite;
+  }
+  
+  @keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.5; }
+  }
+
+#todo-list {
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 10px 20px;
+    border-radius: 20px;
+    display: inline-block;
+}
+
+#todo-list {
+    list-style: none;
+}
+
+#quote {
+    position: absolute;
+    bottom: 20px;
+}
